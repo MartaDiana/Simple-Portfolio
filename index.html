@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
-    <title>Simple Portfolio</title>
+    <title>Marta Diana</title>
   </head>
   <body id="body">
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light opacity-75">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light opacity-75" id="navbar">
       <div class="container">
         <a class="navbar-brand" style="color: rgb(100, 100, 100); font-size: 30px; font-weight: bold; letter-spacing: 3px" href="#"> PORTFOLIO </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
     <!-- end of navbar -->
 
     <!-- jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="welcome-section">
       <div class="container">
         <img src="img/marta.jpg" class="rounded-circle" alt="" />
         <h1 class="display-4 mt-2" style="font-size: 30px; font-weight: 400">Marta Diana</h1>
@@ -77,56 +77,58 @@
         </div>
         <div class="row">
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <img src="img/bigbang.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Tribute Page</h5>
+                <a href="https://martadiana.github.io/FreeCodeCamp_TributePage/" class="btn btn-primary" target="_blank">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <img src="img/survey.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Survey Form</h5>
+                <a href="https://martadiana.github.io/FreeCodeCamp_Survey_Form/" class="btn btn-primary" target="_blank">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <img src="img/dokumen.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Document</h5>
+                <a href="https://martadiana.github.io/FreeCodeCamp_Technical_Documentation_Page/" class="btn btn-primary" target="_blank">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <img src="img/landing_page.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Landing Page</h5>
+                <a href="https://martadiana.github.io/Landing_Page_Css_Grid/" target="_blank" class="btn btn-primary">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <img src="img/gallery.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Gallery Photo</h5>
+                <a href="https://martadiana.github.io/Photo-Gallery/" target="_blank" class="btn btn-primary">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4">
-            <div class="card">
-              <img src="img/content.jpg" class="card-img-top" alt="..." />
+            <div class="card project-tile">
+              <a href="">
+                <img src="img/calculator.png" class="card-img-top" alt="..." />
+              </a>
               <div class="card-body">
-                <p class="card-text" style="margin-bottom: 0">This project will be available soon</p>
-                <p style="margin: 0">&copy; Mayer Tawfik</p>
+                <h5 class="card-title">Calculator</h5>
+                <a href="https://martadiana.github.io/Calculator/" target="_blank" class="btn btn-primary">Go To Project &raquo;</a>
               </div>
             </div>
           </div>
@@ -146,7 +148,7 @@
         <div class="row text-center">
           <div class="col social" style="margin-bottom: 150px">
             <a href="https://www.instagram.com/martaadiana_/" target="_blank"><i class="bi bi-instagram media"></i></a>
-            <a href="https://github.com/MartaDiana" target="_blank"><i class="bi bi-github media"></i></a>
+            <a href="https://github.com/MartaDiana" target="_blank" id="profile-link"><i class="bi bi-github media"></i></a>
             <a href="https://www.linkedin.com/in/marta-diana-80a831201/" target="_blank"><i class="bi bi-linkedin media"></i></a>
             <a href="mailto:martadiana2503@gmail.com"><i class="bi bi-envelope"></i></a>
           </div>
